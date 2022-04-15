@@ -11,6 +11,13 @@ module.exports = {
           400: "#EE7A3A",
           500: "#ED7839",
         },
+        rose: {
+          300: "#FDF1EB",
+        },
+        gray: {
+          border: "#ECECEC",
+          titleSection: "#4E4E4E",
+        },
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],

@@ -6,7 +6,7 @@ export default function Header() {
     { value: "eng", label: "ENG" },
   ];
   return (
-    <header className="flex flex-col lg:flex-row items-center bg-[#FDF1EB] w-full pr-14 lg:pr-0 lg:pl-56">
+    <header className="flex flex-col lg:flex-row items-center bg-rose-300 w-full pr-14 lg:pr-0 lg:pl-56">
       <div className="flex flex-col text-[#725C5C] lg:mr-28 lg:pl-9">
         <p className="text-sm lg:text-base">
           Anais do Simpósio Latino Americano de Ciências de Alimentos{" "}

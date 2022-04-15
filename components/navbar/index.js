@@ -41,7 +41,7 @@ export default function Navbar({ open }) {
             e.active ? ( //Se for ativo, adiciona a div com gradient ao lado esquerdo (como se fosse uma borda)
               <li
                 key={idx}
-                className="bg-[#FDF1EB] font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
+                className="bg-rose-300 font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
               >
                 <div className="bg-gradient-to-b from-orange-300 to-orange-400 w-1 h-full absolute inset-y-0 left-0"></div>
                 <a className="ml-1" href="">
@@ -51,7 +51,7 @@ export default function Navbar({ open }) {
             ) : (
               <li
                 key={idx}
-                className="hover:bg-[#FDF1EB] font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
+                className="hover:bg-rose-300 font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
               >
                 <a href="">{e.name}</a>
               </li>
@@ -76,7 +76,7 @@ export default function Navbar({ open }) {
             e.active ? ( //Se for ativo, adiciona a div com gradient ao lado esquerdo (como se fosse uma borda)
               <li
                 key={idx}
-                className="bg-[#FDF1EB] font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
+                className="bg-rose-300 font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] relative"
               >
                 <div className="bg-gradient-to-b from-orange-300 to-orange-400 w-1 h-full absolute inset-y-0 left-0"></div>
                 <a className="ml-1" href="">
@@ -86,7 +86,7 @@ export default function Navbar({ open }) {
             ) : (
               <li
                 key={idx}
-                className="hover:bg-[#FDF1EB] font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] bg-white"
+                className="hover:bg-rose-300 font-quicksand font-medium pl-6 py-1.5 text-[#725C5C] border-b-2 border-[#E7E7E7] bg-white"
               >
                 <a href="">{e.name}</a>
               </li>

@@ -1,13 +1,15 @@
-export default function Button({
-  children,
-  color,
-  textColor,
-  margin,
-  width,
-  hover,
-}) {
+export default function Button({ children, onClick, style, form }) {
   return (
-    <button className="rounded-lg bg-orange-500 text-white p-2 px-5 font-semibold">
+    <button
+      className={
+        style
+          ? style
+          : " rounded-lg bg-orange-500 text-white p-2 px-5 font-semibold hover:bg-orange-300 transition duration-500"
+      }
+      onClick={onClick}
+      type="button"
+      form={form}
+    >
       {children}
     </button>
   );
