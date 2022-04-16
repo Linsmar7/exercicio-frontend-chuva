@@ -1,3 +1,6 @@
+import React from "react";
+
+// Componente de botão com propriedades pra mudar a classe, colocar onClick, mudar type
 export default function Button({ children, onClick, style, form, type }) {
   return (
     <button

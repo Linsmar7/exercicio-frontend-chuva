@@ -1,10 +1,12 @@
+import React from "react";
 import Button from "../buttons/button";
 import DownloadIcon from "./../../src/assets/downloadIcon.svg";
 import CatLimitless from "./../../src/assets/catlimitless.jpg";
 import AvatarVideo from "./../../src/assets/avatarOverlayVideo.svg";
 import DoiIcon from "./../../src/assets/doi.svg";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
+//Array de objetos com os detalhes do trabalho
 const details = {
   type: "Pôster",
   thematicAxis: "Alimentação e saúde (AS)",
@@ -43,8 +45,8 @@ const details = {
 };
 
 export default function Content() {
-  const [favorite, setFavorite] = useState(false);
-  const [play, setPlay] = useState(false);
+  const [favorite, setFavorite] = useState(false); //hook pra trocar a cor da estrelina
+  const [play, setPlay] = useState(false); //hook pra dar play no vídeo
   const url = play
     ? "https://www.youtube.com/embed/uwmeH6Rnj2E?autoplay=1"
     : "https://www.youtube.com/embed/uwmeH6Rnj2E0";

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import Button from "../buttons/button";
 import CreateMessage from "./create";
 import DoneMessage from "./done";
 import SendMessage from "./send";
 import Comment from "./comments";
 import BlurComment from "./comments/blurComment";
 
+//Array de objetos com as respostas a um dos comentários
 const allReplies = [
   {
     name: "Adriano da Silva",
@@ -37,7 +37,9 @@ const allReplies = [
 ];
 
 export default function DiscussionSection() {
+  //hook pra mudar da página de com o botão de criar novo tópico pra página do formulário
   const [createToSend, setCreateToSend] = useState(false);
+  //hook que contém os dados da mensagem que você enviou, se você enviou, muda da página do form para a página de mensagem enviada com sucesso
   const [message, setMessage] = useState();
   return (
     <section className="flex flex-col mb-10 border border-gray-border">

@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Reply({ replies }) {
+  //Usei alguns ternários pra verificar se o comentário a mensagem é feita por um autor ou coAutor pra mudar o bg e ter o nome ao lado
   if (!replies) return <></>;
   return replies.map((e, idx) => {
     let bgcolor = e.author || e.coAuthor ? "bg-[#F8F8F8]" : "bg-white";

@@ -8,6 +8,7 @@ import HamburgerIcon from "../components/navbar/hamburgerIcon";
 import ResumeSection from "../components/resumeSection";
 
 export default function Home() {
+  //hook e função pra navbar mobile
   const [mobile, setMobile] = useState("-translate-x-full");
   function changeMobileHook() {
     if (mobile == "-translate-x-full") setMobile("translate-x-0");

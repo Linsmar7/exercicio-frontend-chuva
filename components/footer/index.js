@@ -1,6 +1,8 @@
+import React from "react";
 import Button from "../buttons/button";
 
 export default function Footer() {
+  //vi que no figma o Footer era uma imagem, mas preferi fazer tudo na mão mesmo pra ficar melhor pro usuário dependendo da tela (não ficar comprimido, esticado, etc.)
   return (
     <footer className="flex flex-col lg:flex-row mb-16 pt-4 border-t border-gray-border">
       <div className="flex flex-col items-center text-[#341947] font-quicksand">

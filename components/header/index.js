@@ -1,3 +1,4 @@
+import React from "react";
 import Avatar from "./../../src/assets/avatar.svg";
 
 export default function Header() {
@@ -17,6 +18,7 @@ export default function Header() {
         <p className="text-sm lg:text-base">ISSN: 1234-5678</p>
       </div>
       <div className="flex flex-row items-center pl-9 lg:pl-0 ml-auto mr-11">
+        {/* A classe selectMenu pode ser vista em /styles/tailwind.css */}
         <select className="selectMenu">
           <option>PT, BR</option>
           <option>ENG</option>

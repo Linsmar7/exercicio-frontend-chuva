@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function BlurComment({ subject, author, comment }) {
+  //comentário borrado com os dados enviados em send.js
   return (
     <div className="relative w-full h-96 sm:h-56 my-3.5 border border-gray-border rounded shadow-comment font-quicksand py-4">
       <div className="absolute flex flex-col -z-10 w-full h-full top-0 left-0 pt-4 blur-sm">

@@ -4,12 +4,15 @@ import MoreIcon from "./../../../src/assets/more.svg";
 import Reply from "./reply";
 
 export default function Comment({ subject, author, comment, allreplies }) {
+  //hook pra deixar o coração vermelho
   const [like, setLike] = useState(false);
+  //hook pra aumentar o número de likes quando você aperta o coração
   const [incLike, setIncLike] = useState(0);
   function toggleIncLike() {
     if (incLike == 1) setIncLike(0);
     else setIncLike(1);
   }
+  //hook pra abrir as respostas ao comentário
   const [openReplies, setOpenReplies] = useState(false);
   return (
     <div className="flex flex-col my-3.5 border border-gray-border rounded shadow-comment font-quicksand py-4 ">

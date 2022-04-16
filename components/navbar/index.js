@@ -1,3 +1,4 @@
+import React from "react";
 import LogoEvento from "../../src/assets/logoevento.svg";
 
 const links = [
@@ -28,6 +29,8 @@ const links = [
 ];
 
 export default function Navbar({ open }) {
+  // tem a prop open que é usada na página principal (/pages/index.js) pra poder abrir e fechar a navbar na versão mobile utilizando translate,
+  // em telas grandes sempre se mantém como "lg:translate-x-0"
   return (
     <nav
       className={

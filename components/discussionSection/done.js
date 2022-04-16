@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../buttons/button";
 
 export default function DoneMessage({ toggle, emptyData }) {

@@ -4,6 +4,7 @@ import ItalicIcon from "./../../src/assets/italicIcon.svg";
 import BoldIcon from "./../../src/assets/boldIcon.svg";
 
 export default function SendMessage({ submit }) {
+  //Pego as informações do form e guardo nos hooks e mando pra um objeto pela função sendData, passo pro pai(CommentSection) por props(submit)
   const [topicValue, setTopicValue] = useState("");
   const [bodyValue, setBodyValue] = useState("");
   function sendData() {
