@@ -21,7 +21,7 @@ export default function SendMessage({ submit }) {
         Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
       </p>
       <form id="topicForm" className="flex flex-col w-full px-3.5">
-        <label for="assunto" className="text-orange-500 font-bold">
+        <label for="assunto" className="text-orange-500 font-bold font-sans">
           Assunto
         </label>
         <input
@@ -33,12 +33,12 @@ export default function SendMessage({ submit }) {
           value={topicValue}
           onInput={(e) => setTopicValue(e.target.value)}
         />
-        <label for="conteudo" className="text-orange-500 font-bold">
+        <label for="conteudo" className="text-orange-500 font-bold font-sans">
           Conteúdo
         </label>
         <textarea
           name="conteudo"
-          className="border border-[#CCCCCC]"
+          className="border border-[#CCCCCC] px-1"
           rows="6"
           min="20"
           value={bodyValue}
@@ -57,7 +57,7 @@ export default function SendMessage({ submit }) {
           </div>
           <Button
             onClick={() => submit(sendData())}
-            style="bg-gradient-to-b from-orange-300 to-orange-400 w-64 text-white p-2 px-5 font-semibold self-end"
+            style="bg-gradient-to-b from-orange-300 to-orange-400 sm:w-64 text-white p-2 px-5 font-semibold self-end"
             type="submit"
             form="topicForm"
           >

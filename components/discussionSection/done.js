@@ -11,12 +11,12 @@ export default function DoneMessage({ toggle, emptyData }) {
         Agradecemos por sua contribuição, uma notificação será enviada ao seu
         email assim que seu tópico for respondido!
       </p>
-      <a href="#" className="text-orange-400 underline">
+      <a href="#" className="font-quicksand text-orange-400 underline">
         Descubra outros trabalhos!
       </a>
       <Button
         onClick={() => (toggle(true), emptyData(false))}
-        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 w-60 rounded-lg text-white p-2 px-5 font-semibold z-10"
+        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 w-60 font-quicksand rounded-lg text-white p-2 px-5 font-semibold z-10"
       >
         criar novo tópico
       </Button>

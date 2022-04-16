@@ -15,7 +15,7 @@ export default function Comment({ subject, author, comment, allreplies }) {
     <div className="flex flex-col my-3.5 border border-gray-border rounded shadow-comment font-quicksand py-4 ">
       <div className="px-6 pb-4">
         <p className="font-bold text-orange-500 text-xl">{subject}</p>
-        <p className="text-[#5C5C5C] text-sm">{author}</p>
+        <p className="text-black text-sm font-medium">{author}</p>
         <p className="text-[#4D4D4D] my-2">{comment}</p>
         <div className="flex font-sans font-light text-[#757575] gap-x-4">
           <img
@@ -43,10 +43,10 @@ export default function Comment({ subject, author, comment, allreplies }) {
               />
             </svg>
           </Button>
-          <p>{incLike} like</p>
+          <p className="font-sans">{incLike} like</p>
           <p
             onClick={() => setOpenReplies(!openReplies)}
-            className="hover:cursor-pointer"
+            className="hover:cursor-pointer font-sans"
           >
             {allreplies ? allreplies.length : 0} resposta(s)
           </p>

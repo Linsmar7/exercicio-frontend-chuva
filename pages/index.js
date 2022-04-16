@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Content from "../components/contentSection";
 import DiscussionSection from "../components/discussionSection";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import Navbar from "../components/navbar";
 import HamburgerIcon from "../components/navbar/hamburgerIcon";
@@ -21,6 +22,7 @@ export default function Home() {
         <Content />
         <ResumeSection />
         <DiscussionSection />
+        <Footer />
       </div>
     </div>
   );

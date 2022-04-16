@@ -16,13 +16,13 @@ export default function CreateMessage({ toggle }) {
         <img src={Icon2.src} />
         <img src={Icon3.src} />
       </div>
-      <p className="text-sm text-[#595959]">
+      <p className="text-sm text-[#595959] font-quicksand">
         Sabia que o maior estímulo no desenvolvimento científico e cultural é a
         curiosidade? Deixe seus questionamentos ou sugestões para o autor!
       </p>
       <Button
         onClick={() => toggle(true)}
-        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 w-40 flex items-center gap-x-2 rounded-lg text-white p-2 px-5 font-semibold z-10"
+        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 font-quicksand flex items-center gap-x-2 rounded-lg text-white p-2 px-5 font-semibold z-10"
       >
         <img src={PlusIcon.src}></img>criar tópico
       </Button>

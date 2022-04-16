@@ -2,7 +2,7 @@ import React from "react";
 
 export default function BlurComment({ subject, author, comment }) {
   return (
-    <div className="relative w-full h-40 my-3.5 border border-gray-border rounded shadow-comment font-quicksand py-4">
+    <div className="relative w-full h-96 sm:h-56 my-3.5 border border-gray-border rounded shadow-comment font-quicksand py-4">
       <div className="absolute flex flex-col -z-10 w-full h-full top-0 left-0 pt-4 blur-sm">
         <div className="px-6 pb-4">
           <p className="font-bold text-orange-500 text-xl">{subject}</p>
@@ -23,10 +23,10 @@ export default function BlurComment({ subject, author, comment }) {
             fill="#707070"
           />
         </svg>
-        <p className="text-[#707070] text-xl font-bold">
+        <p className="text-[#707070] text-lg lg:text-xl font-bold">
           Aguardando feedback dos autores
         </p>
-        <a href="#" className="text-orange-400 underline text-lg">
+        <a href="#" className="font-sans text-orange-400 underline text-lg">
           Editar tópico
         </a>
       </div>

@@ -22,7 +22,8 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
-        quicksand: ["DM Sans", "sans-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
+        dmsans: ["DM Sans", "sans-serif"],
       },
       boxShadow: {
         r: "0 0 60px 0 rgba(0, 0, 0, 0.3)",

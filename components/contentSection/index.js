@@ -1,6 +1,7 @@
 import Button from "../buttons/button";
 import DownloadIcon from "./../../src/assets/downloadIcon.svg";
 import CatLimitless from "./../../src/assets/catlimitless.jpg";
+import AvatarVideo from "./../../src/assets/avatarOverlayVideo.svg";
 import DoiIcon from "./../../src/assets/doi.svg";
 import React, { useState, useEffect } from "react";
 
@@ -43,6 +44,10 @@ const details = {
 
 export default function Content() {
   const [favorite, setFavorite] = useState(false);
+  const [play, setPlay] = useState(false);
+  const url = play
+    ? "https://www.youtube.com/embed/uwmeH6Rnj2E?autoplay=1"
+    : "https://www.youtube.com/embed/uwmeH6Rnj2E0";
   return (
     <section className="flex flex-col lg:flex-row mt-5 gap-x-2">
       <div className="flex flex-col lg:w-10/12 lg:mr-8">
@@ -50,16 +55,38 @@ export default function Content() {
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP{" "}
         </h1>
-        <iframe
-          width="100%"
-          height="530"
-          src="https://www.youtube.com/embed/uwmeH6Rnj2E"
-        ></iframe>
+        <div
+          className="relative w-full h-[530px]"
+          onClick={() => setPlay(!play)}
+        >
+          <iframe
+            width="100%"
+            height="100%"
+            src={url}
+            className="absolute"
+          ></iframe>
+          <div className="absolute flex flex-col px-8 py-14 gap-y-44 sm:gap-y-72">
+            <p className="font-black text-white text-2xl tracking-wider leading-6">
+              Análise sensorial de preparações funcionais desenvolvidas para
+              escolares entre 09 e 15 anos, do município de Campinas/SP
+            </p>
+            <div className="flex items-center gap-x-4">
+              <img
+                src={AvatarVideo.src}
+                className="border border-orange-500 p-0.5 rounded-full"
+              />
+              <div className="text-white font-black text-xl">
+                <p>Beatriz Christiane Melo</p>
+                <p>FCA / Universidade Estadual de Campinas</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="flex flex-col lg:w-3/12">
         <div className="flex flex-row lg:justify-end justify-center lg:mt-0 mt-2 gap-x-2">
           <Button>
-            <a href={CatLimitless.src} download className="flex">
+            <a href={CatLimitless.src} download className="flex font-medium">
               <img src={DownloadIcon.src} className="mr-2 max-w-none" />
               Download
             </a>
