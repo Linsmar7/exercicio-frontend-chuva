@@ -48,7 +48,7 @@ export default function Content() {
   const [play, setPlay] = useState(false); //hook pra dar play no vídeo
   const url = play
     ? "https://www.youtube.com/embed/uwmeH6Rnj2E?autoplay=1"
-    : "https://www.youtube.com/embed/uwmeH6Rnj2E0";
+    : "https://www.youtube.com/embed/uwmeH6Rnj2E";
   return (
     <section className="flex flex-col lg:flex-row mt-5 gap-x-2">
       <div className="flex flex-col lg:w-10/12 lg:mr-8">
