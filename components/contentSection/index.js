@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../buttons/button";
 import DownloadIcon from "./../../src/assets/downloadIcon.svg";
 import CatLimitless from "./../../src/assets/catlimitless.jpg";
 import AvatarVideo from "./../../src/assets/avatarOverlayVideo.svg";
 import DoiIcon from "./../../src/assets/doi.svg";
-import React, { useState } from "react";
 
 //Array de objetos com os detalhes do trabalho
 const details = {
