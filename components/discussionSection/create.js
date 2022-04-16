@@ -7,11 +7,11 @@ import Icon3 from "./../../src/assets/icone3.svg";
 
 export default function CreateMessage({ toggle }) {
   return (
-    <div className="flex flex-col items-center border border-rose-border py-3.5 gap-y-7">
+    <div className="flex flex-col items-center border-b border-rose-border py-3.5 gap-y-7">
       <p className="text-orange-500 text-lg font-bold">
         Compartilhe suas ideias ou dúvidas com os autores!
       </p>
-      <div className="flex">
+      <div className="flex gap-x-14">
         <img src={Icon1.src} />
         <img src={Icon2.src} />
         <img src={Icon3.src} />
@@ -22,7 +22,7 @@ export default function CreateMessage({ toggle }) {
       </p>
       <Button
         onClick={() => toggle(true)}
-        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 w-40 flex items-center gap-x-2 rounded-lg text-white p-2 px-5 font-semibold"
+        style="-mb-9 bg-gradient-to-b from-orange-300 to-orange-400 w-40 flex items-center gap-x-2 rounded-lg text-white p-2 px-5 font-semibold z-10"
       >
         <img src={PlusIcon.src}></img>criar tópico
       </Button>

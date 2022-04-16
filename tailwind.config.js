@@ -17,6 +17,7 @@ module.exports = {
         gray: {
           border: "#ECECEC",
           titleSection: "#4E4E4E",
+          bluropacity: "rgba(221, 221, 221, 0.4)",
         },
       },
       fontFamily: {
@@ -25,6 +26,7 @@ module.exports = {
       },
       boxShadow: {
         r: "0 0 60px 0 rgba(0, 0, 0, 0.3)",
+        comment: "0px 0px 8px rgba(0, 0, 0, 0.12)",
       },
     },
   },

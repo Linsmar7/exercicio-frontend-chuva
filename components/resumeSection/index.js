@@ -8,7 +8,7 @@ const ReadMore = ({ children }) => {
     setIsReadMore(!isReadMore);
   };
   return (
-    <p className="font-quicksand font-base text-[#5C5C5C] px-3.5 py-3.5 border border-gray-border">
+    <p className="font-quicksand font-base text-[#5C5C5C] px-3.5 py-3.5">
       {isReadMore ? text.slice(0, 1000) : text}
       <button
         type="button"
@@ -23,8 +23,8 @@ const ReadMore = ({ children }) => {
 
 export default function ResumeSection() {
   return (
-    <section className="flex flex-col">
-      <p className="px-3.5 py-2.5 bg-rose-300 border border-gray-border text-xl font-medium text-gray-titleSection">
+    <section className="flex flex-col border border-gray-border">
+      <p className="px-3.5 py-2.5 bg-rose-300 border-b border-gray-border text-xl font-medium text-gray-titleSection">
         Resumo
       </p>
       <ReadMore>

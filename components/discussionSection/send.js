@@ -10,12 +10,13 @@ export default function SendMessage({ submit }) {
     let message = {
       topic: topicValue,
       body: bodyValue,
+      author: "Nome Exemplo",
     };
     return message;
   }
 
   return (
-    <div className="flex flex-col items-center border border-rose-border py-3.5 gap-y-7 font-quicksand">
+    <div className="flex flex-col items-center border-b border-rose-border py-3.5 gap-y-7 font-quicksand">
       <p className="text-[#5C5C5C] text-lg">
         Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!
       </p>
@@ -26,6 +27,7 @@ export default function SendMessage({ submit }) {
         <input
           type="text"
           name="assunto"
+          min="5"
           placeholder="Defina um tópico sucinto para notificar os autores..."
           className="border border-[#CCCCCC] py-2.5 pl-6 mb-3.5 text-[#4D4D4D]"
           value={topicValue}
@@ -38,6 +40,7 @@ export default function SendMessage({ submit }) {
           name="conteudo"
           className="border border-[#CCCCCC]"
           rows="6"
+          min="20"
           value={bodyValue}
           onInput={(e) => setBodyValue(e.target.value)}
         ></textarea>
@@ -55,6 +58,8 @@ export default function SendMessage({ submit }) {
           <Button
             onClick={() => submit(sendData())}
             style="bg-gradient-to-b from-orange-300 to-orange-400 w-64 text-white p-2 px-5 font-semibold self-end"
+            type="submit"
+            form="topicForm"
           >
             Enviar
           </Button>

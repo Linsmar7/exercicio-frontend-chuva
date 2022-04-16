@@ -44,8 +44,8 @@ const details = {
 export default function Content() {
   const [favorite, setFavorite] = useState(false);
   return (
-    <section className="flex mt-5 gap-x-2">
-      <div className="flex flex-col w-10/12 mr-8">
+    <section className="flex flex-col lg:flex-row mt-5 gap-x-2">
+      <div className="flex flex-col lg:w-10/12 lg:mr-8">
         <h1 className="font-black text-xl text-orange-500 mb-5">
           Análise sensorial de preparações funcionais desenvolvidas para
           escolares entre 09 e 15 anos, do município de Campinas/SP{" "}
@@ -56,8 +56,8 @@ export default function Content() {
           src="https://www.youtube.com/embed/uwmeH6Rnj2E"
         ></iframe>
       </div>
-      <div className="flex flex-col w-3/12">
-        <div className="flex flex-row justify-end gap-x-2">
+      <div className="flex flex-col lg:w-3/12">
+        <div className="flex flex-row lg:justify-end justify-center lg:mt-0 mt-2 gap-x-2">
           <Button>
             <a href={CatLimitless.src} download className="flex">
               <img src={DownloadIcon.src} className="mr-2 max-w-none" />
@@ -86,11 +86,11 @@ export default function Content() {
             <img src={DoiIcon.src} className="max-w-none" />
           </Button>
         </div>
-        <p className="font-semibold text-lg self-end my-3 text-orange-500">
+        <p className="font-semibold text-lg lg:self-end self-center my-3 text-orange-500">
           COMO CITAR ESSE TRABALHO?
         </p>
-        <div className="flex flex-col border border-gray-border w-10/12 self-end">
-          <div className="w-full py-2.5 px-4 bg-rose-300 border border-gray-border">
+        <div className="flex flex-col border border-gray-border w-10/12 lg:self-end self-center">
+          <div className="w-full py-2.5 px-4 bg-rose-300 border-b border-gray-border">
             <p className="text-gray-titleSection font-semibold text-xl">
               Detalhes
             </p>

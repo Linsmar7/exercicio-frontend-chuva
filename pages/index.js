@@ -17,7 +17,7 @@ export default function Home() {
       <Navbar open={mobile} />
       <HamburgerIcon onClick={() => changeMobileHook()} />
       <Header />
-      <div className="flex flex-col lg:ml-64 lg:mr-9 gap-y-8">
+      <div className="flex flex-col lg:ml-64 lg:mr-9 gap-y-8 lg:mx-0 mx-3.5">
         <Content />
         <ResumeSection />
         <DiscussionSection />
